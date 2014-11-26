@@ -139,7 +139,8 @@ h1 a {
 /* line 51, ../scss/screen.scss */
 h1,
 h2,
-h3 {
+h3,
+h5 {
   margin-top: 0;
   font-family: "freight-display-pro", serif;
   font-weight: 300;font-weight: 400;
@@ -157,21 +158,22 @@ h3 {
     font-size: 2.125em;
   }
 }
-/* line 60, ../scss/screen.scss */
 .motto h2 {
   color: #fff;
-}
-.explaination {
-  color: #fff;
-  width: 50%;
-  padding-bottom: 140px;
 }
 
 .brag h2 {
   margin-top: 20px;
-  margin-bottom: 45px;
+  margin-bottom: 15px;
   color: #fff;
 }
+
+@media only screen and (min-width: 700px) {
+  .brag h2 {
+    margin-bottom: 45px;
+  }
+}
+
 
 .demo-reel h2 {
   margin-bottom: 40px;
@@ -271,31 +273,47 @@ h4 .underline {
   margin: 0 auto;
   background-color: #fff;
 }
-/* line 160, ../scss/screen.scss */
+
+
+
+
 #innovation h4 {
   color: #000;
 }
-/* line 163, ../scss/screen.scss */
 #innovation h4 .underline {
   background-color: #000;
 }
 
-/* line 167, ../scss/screen.scss */
+
+
+h5 {
+  margin-bottom: 40px;
+  color: #fff;
+  font-size: 1.5em;
+}
+
+
+
 a {
   color: #000;
 }
-/* line 169, ../scss/screen.scss */
-a:hover {
-  color: #999;
-  -moz-transition-property: color, scale, opacity;
-  -o-transition-property: color, scale, opacity;
-  -webkit-transition-property: color, scale, opacity;
-  transition-property: color, scale, opacity;
-  -moz-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+
+h2 a { 
+  color: #fff;
+  text-decoration: underline; 
 }
+
+  a:hover {
+    color: #999;
+    -moz-transition-property: color, scale, opacity;
+    -o-transition-property: color, scale, opacity;
+    -webkit-transition-property: color, scale, opacity;
+    transition-property: color, scale, opacity;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
 
 /* line 176, ../scss/screen.scss */
 ::selection {
@@ -388,7 +406,18 @@ a:hover {
   bottom: 0;
 }
 
-.caption-video {
+.video-caption { display: none; }
+
+@media only screen and (min-width: 600px) {
+  .video-caption {
+    display: block;
+    margin-bottom: 140px;
+    color: #fff;
+  }
+}
+
+
+.caption-icon {
 	height: 25px;
 	margin-right: 10px;
 }
@@ -1088,8 +1117,7 @@ footer .cta-button {
 }
 
 
-.background-video,
-.background-video-overlay {
+.background-video{
   display: none;
 }
 
@@ -1121,7 +1149,6 @@ footer .cta-button {
 
 
   .background-video-overlay {
-    display: block;
   	background-color: black;
   	opacity: .7;
   	z-index: 10;
