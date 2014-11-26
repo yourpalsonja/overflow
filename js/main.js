@@ -1,5 +1,13 @@
+var previousPosition = 0, // previous scroll position
+    menuHeight = 54, // height of menu (once scroll passed it, menu is hidden)
+    detachPoint = 650, // point of detach (after scroll passed it, menu is fixed)
+    lilBitOfGive = 6; // scrolling value after which triggers hide/show menu
+
+
+
+
 // only start parallaxin' a background if you can see it
-function slideInView(){
+var slideInView = function(){
   
   var $slide = $('.parallax'),
       scrollPosition = $(window).scrollTop(),
@@ -10,66 +18,20 @@ function slideInView(){
     
     if (windowHeight + scrollPosition >= $('#'+ slideId).offset().top) {
       var parallaxFactor = $('#'+ slideId).offset().top - (scrollPosition + windowHeight);
-      
-      
-      $('.' + slideId +'-bg').css('top', -(parallaxFactor*0.125) - 150 +'px')
+            $('.' + slideId +'-bg').css('top', -(parallaxFactor*0.125) - 150 +'px')
     }
   });
 }
 
 
 
-// fade in the video player
-function playerInView(){
-  
-  var $playButton = $('.play-button'),
-      scrollPosition = $(window).scrollTop(),
-      windowHeight = $(window).height();
-      
-  if (windowHeight + scrollPosition >= $playButton.offset().top) {
-    $playButton.css('opacity', 1);
-  }
-}
 
 
-
-
-
-var videoWidth = function(){
-  var $video = $('.background-video'),
-      $hero = $('#hero');
-  
-  
-  if($hero.height() > $hero.width()){
-    
-    $video.css({
-      "width" : "auto",
-      "height": $hero.height() + 100
-    });
-    
-  } else {
-    
-    if($hero.height() > $video.height()){
-      $video.css({
-        "width" : "auto",
-        "height": $hero.height() + 100
-      })
-      
-    } else {
-      $video.css({
-      "width" : '100%',
-      "height": 'auto'
-    });
-   } 
-  }
-  
-}
 
 
 	
 $(document).scroll(function(){
    if ($(window).width() > 700) {
-     playerInView();
      slideInView();
   }
 });
