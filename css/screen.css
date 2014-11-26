@@ -458,23 +458,19 @@ a:hover {
   }
 }
 
-/* line 270, ../scss/screen.scss */
 .motto {
   float: left;
 }
 
-/* line 274, ../scss/screen.scss */
 .logo {
   margin-bottom: 45px;
 }
 
-/* line 278, ../scss/screen.scss */
 header .caption {
   float: left;
 }
 
 @media only screen and (min-width: 700px) {
-  /* line 284, ../scss/screen.scss */
   .motto.slide-contents {
     width: 71.296%;
     margin: 0 9% 0 20.703125%;
@@ -482,18 +478,16 @@ header .caption {
     overflow: visible;
   }
 }
+
 @media only screen and (max-width: 700px) {
-  /* line 294, ../scss/screen.scss */
   .motto {
     padding-top: 0;
     padding-bottom: 0;
   }
 
-  /* line 298, ../scss/screen.scss */
   .motto img {
     display: none;
   }
-
 
   .motto h2 {
     margin-bottom: 120px;
@@ -508,30 +502,25 @@ header .caption {
 
 .brag p {
   margin-top: 0;
-  margin-bottom: 70px;
+  margin-bottom: 30px;
 }
 
 @media only screen and (min-width: 700px) {
-
   .slide-contents {
     margin-top: 35px;
     margin-bottom: 90px;
   }
 
-
-  /* line 318, ../scss/screen.scss */
   .brag p {
-    margin-top: 0;
     margin-bottom: 70px;
   }
 }
-/* line 330, ../scss/screen.scss */
+
 .client-list {
   padding: 0;
   list-style: none;
 }
 
-/* line 335, ../scss/screen.scss */
 .client-list li {
   /* Since Moz does not support zoom, we reduce margin to compensate for larger img size from the style below this one */
 }
