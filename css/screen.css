@@ -167,17 +167,17 @@ h3 {
   padding-bottom: 140px;
 }
 
-/* line 65, ../scss/screen.scss */
 .brag h2 {
-  margin-top: 120px;
+  margin-top: 20px;
   margin-bottom: 45px;
   color: #fff;
 }
-/* line 70, ../scss/screen.scss */
+
 .demo-reel h2 {
   margin-bottom: 40px;
   color: #191919;
 }
+
 @media only screen and (min-width: 700px) {
   /* line 75, ../scss/screen.scss */
   .what-we-do h2 {
@@ -319,7 +319,7 @@ a:hover {
   padding: 60px 3.90625%;
   margin: 0 auto;
 }
-/* line 197, ../scss/screen.scss */
+
 .slide-contents p {
   margin: 0;
   font-size: 1.125em;
@@ -327,30 +327,56 @@ a:hover {
 }
 
 @media only screen and (min-width: 700px) {
-  /* line 206, ../scss/screen.scss */
+
   .slide-contents p {
     padding-right: 10%;
     padding-left: 10%;
   }
 }
-@media only screen and (min-width: 1100px) {
-  /* line 214, ../scss/screen.scss */
 
-}
 
 .triplet {
-	width: 33.33%;
-	float: left;
-	position: relative;
-}
-.triplet-icon {
-	width: 100px;
-	max-height: 100px;
-	position: absolute;
-	left: 35%;
+	width: 100%%;
+  float: left;
+  position: relative;
 }
 
-/* line 220, ../scss/screen.scss */
+.triplet-icon {
+/*  width: 100px;
+  max-height: 100px;
+  position: absolute;
+  left: 35%;
+  text-align: center;*/
+  
+  display: block;
+  width: 100%;
+  height: 100px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100px;
+}
+
+  #globe-icon {
+    background-image: url('../img/icon-global-warming.png');
+  }
+  #gavel-icon {
+    background-image: url('../img/icon-gavel.png');
+  }  
+  #money-icon {
+    background-image: url('../img/icon-money.png');
+  }
+
+
+
+@media only screen and (min-width: 700px) {
+  .triplet {
+  	width: 33.33%;
+  }
+}
+
+
+
+
 .caption {
   margin-top: 40px;
   margin-bottom: 30px;
@@ -361,6 +387,7 @@ a:hover {
   left: 50px;
   bottom: 0;
 }
+
 .caption-video {
 	height: 25px;
 	margin-right: 10px;
@@ -421,7 +448,8 @@ a:hover {
 
 /* line 264, ../scss/screen.scss */
 .hero-bg {
-  background-image: url("../img/narrows-tanker.jpg");
+  background: url('../img/oilspill.jpg') no-repeat center;
+
 }
 @media only screen and (max-width: 700px) {
   /* line 264, ../scss/screen.scss */
@@ -466,24 +494,30 @@ header .caption {
     display: none;
   }
 
-  /* line 299, ../scss/screen.scss */
+
   .motto h2 {
     margin-bottom: 120px;
   }
 }
-/* line 304, ../scss/screen.scss */
+
 .brag {
   color: #8e371a;
   text-align: center;
   background-color: #ff6633;
 }
 
+.brag p {
+  margin-top: 0;
+  margin-bottom: 70px;
+}
+
 @media only screen and (min-width: 700px) {
-  /* line 313, ../scss/screen.scss */
+
   .slide-contents {
     margin-top: 35px;
     margin-bottom: 90px;
   }
+
 
   /* line 318, ../scss/screen.scss */
   .brag p {
@@ -719,7 +753,7 @@ header .caption {
   float: left;
   width: 100%;
 }
-/* line 527, ../scss/screen.scss */
+
 .challenge .challenge-contents, #tankers .challenge-contents, #tankers .challenge-contents, #traction .challenge-contents, #scaling .challenge-contents, #innovation .challenge-contents {
   overflow: hidden;
   max-width: 1280px;
@@ -727,7 +761,7 @@ header .caption {
   margin: 0 auto;
 }
 @media only screen and (min-width: 700px) {
-  /* line 527, ../scss/screen.scss */
+
   .challenge .challenge-contents, #tankers .challenge-contents, #tankers .challenge-contents, #traction .challenge-contents, #scaling .challenge-contents, #innovation .challenge-contents {
     padding: 0;
   }
@@ -745,6 +779,7 @@ header .caption {
   color: inherit;
   text-decoration: underline;
 }
+
 
 
 
@@ -779,16 +814,16 @@ header .caption {
 }
 
 /* line 580, ../scss/screen.scss */
+
 #tankers {
   color: #fff;
   text-align: left;
 }
-/* line 585, ../scss/screen.scss */
 #tankers a:hover {
   color: #fff;
 }
 @media only screen and (min-width: 700px) {
-  /* line 580, ../scss/screen.scss */
+
   #tankers {
 	padding-top: 100px;
 	padding-bottom: 100px;
@@ -797,6 +832,7 @@ header .caption {
 
 /* line 592, ../scss/screen.scss */
 .valuation-bg {
+
   background-image: url("../img/tanker.jpg");
 }
 
@@ -877,6 +913,7 @@ header .caption {
 }
 
 /* line 656, ../scss/screen.scss */
+
 .news {
   float: left;
   width: 100%;
@@ -886,7 +923,7 @@ header .caption {
   background-color: #fff;
 }
 @media only screen and (min-width: 600px) {
-  /* line 656, ../scss/screen.scss */
+
   .news {
     float: left;
     width: 100%;
@@ -897,7 +934,7 @@ header .caption {
   }
 }
 @media only screen and (min-width: 800px) {
-  /* line 656, ../scss/screen.scss */
+
   .news {
     float: left;
     width: 100%;
@@ -909,12 +946,11 @@ header .caption {
 }
 
 
-/* line 682, ../scss/screen.scss */
 .news a {
   text-decoration: underline;
 }
 
-/* line 684, ../scss/screen.scss */
+
 .news-description {
   margin: 0 auto;
   width: 75%;
@@ -928,7 +964,7 @@ header .caption {
 }
 
 @media only screen and (min-width: 600px) {
-  /* line 689, ../scss/screen.scss */
+
   .news-description {
     width: 58.3870968%;
     float: left;
@@ -942,7 +978,7 @@ header .caption {
   }
 }
 @media only screen and (min-width: 800px) {
-  /* line 701, ../scss/screen.scss */
+
   .news-description {
     width: 48.3870968%;
   }
@@ -1062,10 +1098,16 @@ footer .cta-button {
   left: 0;
 }
 
-.background-video {
-	height: 250%;
-	margin-top: -30%;
+
+.background-video,
+.background-video-overlay {
+  display: none;
 }
+
+
+
+
+
 .background-video-overlay {
 	background-color: black;
 	opacity: .7;
@@ -1075,3 +1117,27 @@ footer .cta-button {
 	height: 100%;
 }
 
+
+@media only screen and (min-width: 600px) {
+  .background-video {
+    display: block;
+    min-width: 100%; 
+    min-height: 100%; 
+    width: auto; 
+    height: auto;
+  }
+
+
+
+
+
+  .background-video-overlay {
+    display: block;
+  	background-color: black;
+  	opacity: .7;
+  	z-index: 10;
+  	position: absolute;
+  	width: 100%;
+  	height: 100%;
+  }
+}
