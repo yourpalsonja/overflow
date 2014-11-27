@@ -38,3 +38,34 @@ $(document).scroll(function(){
  
 
 
+$('.fb-linky').on('click', function(){
+  var linkName = 'Overflow | Title of the Section', 
+      linkPicture = $(this).attr('data-linkPicture'),
+      linkDescription = 'Placeholder content for right now...could be soundbite from each section or the same message no matter what to display here.';
+  
+  FB.ui(
+   {
+     method: 'feed',
+     name: linkName,
+     link: 'http://overflow.dev/',
+     picture: linkPicture,
+     description: linkDescription,
+     caption: 'Overflow'
+  }, function(response){});
+})
+
+$('.twitter-linky').on('click', function(){
+  var linkName = 'Overflow | Title of the Section', 
+      linkPicture = $(this).attr('data-linkPicture'),
+      linkDescription = 'Placeholder content for right now...could be soundbite from each section or the same message no matter what to display here.';
+  
+  FB.ui(
+   {
+     method: 'feed',
+     name: linkName,
+     link: 'http://overflow.dev/',
+     picture: linkPicture,
+     description: linkDescription,
+     caption: 'Overflow'
+  }, function(response){});
+})

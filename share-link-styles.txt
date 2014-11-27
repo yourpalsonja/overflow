@@ -1,0 +1,18 @@
+Facebook
+
+<a class="fb-linky"  data-linkPicture="http://gottaBeARealWebsiteNoLocalhost.com/imagename.jpg" href="#">link content</a>
+
+Not sure what we want to grab for each link yet, let's talk about that. Hopefully we can grab it dynamically from content and images in the page, via id's.
+
+
+
+Twitter
+
+FML
+
+<a href="https://twitter.com/intent/tweet?
+        url=http://yourpalsonja.com/overflow
+        &via=twittername
+        &text=400%20More%20Bitumen%20Tankers%20in%20Vancouver">
+
+Unfortunately, none of this shit can be auto-populated. Trying to work on API for it. For right now, an image can appear in a "card" format below the tweet. But not in the tweet itself. You can only do that through API.

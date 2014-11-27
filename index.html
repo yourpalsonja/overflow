@@ -9,6 +9,18 @@
         <title>The Still - Comprehensive Design for Digital Products: Apps, Services and Sites</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
+        
+        
+        
+        
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="Overflow">
+        <meta name="twitter:creator" content="Overflow">
+        <meta name="twitter:title" content="Overflow">
+        <meta name="twitter:description" content="Information relating to the general message will go here. Users can tweet their own info above.">
+        <meta name="twitter:image:src" content="http://yourpalsonja.com/img/bigspill.jpg">
+        <meta property="og:image" content="http://yourpalsonja.com/img/bigspill.jpg">
+        <link rel="canonical" href="http://overflow.dev" />
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
@@ -18,7 +30,24 @@
 		<script src="//use.typekit.net/xxb0glh.js"></script>
 		<script>try{Typekit.load();}catch(e){}</script>
     </head>
-    <body>
+    <body>      
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            appId      : '1512733632309189',
+            xfbml      : true,
+            version    : 'v2.2'
+          });
+        };
+
+        (function(d, s, id){
+           var js, fjs = d.getElementsByTagName(s)[0];
+           if (d.getElementById(id)) {return;}
+           js = d.createElement(s); js.id = id;
+           js.src = "//connect.facebook.net/en_US/sdk.js";
+           fjs.parentNode.insertBefore(js, fjs);
+         }(document, 'script', 'facebook-jssdk'));
+      </script>
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
         <![endif]-->
@@ -29,10 +58,18 @@
             <h1>Overflow</h1>
           
           
+          
+          
+          
+          
+          
           <div class="motto slide-contents">
             <!-- <img class="logo" src="img/km-logo.png"> -->
             <h5 class="statement">Kinder Morgan wants you to think that their pipelines will benefit B.C.</h5>
-            <h2>In reality, this foreign company is shipping the world’s dirtiest oil overseas, <a href="#">generating few jobs</a>, paying virtually <a href="#">no taxes</a>, and creating massive risk.</h2>
+            <h2>In reality, this foreign company is shipping the world’s dirtiest oil overseas, <a href="#">generating few jobs</a>, paying virtually 
+              
+              
+>no taxes</a>, and creating massive risk.</h2>
 			
 				<a class="video-caption" href="https://www.youtube.com/watch?v=d6xXAlsLFhs">
           <img src="img/icon-video.png" class="caption-icon" />
@@ -217,13 +254,14 @@
         </footer>
 
 
-
+        
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
         <script src="js/plugins.js?v=1"></script>
         <script src="js/main.js?v=1"></script>
-        <script src="js/vendor/froogaloop.js"></script>
 
+        <!-- Twitter API -->
+<script type="text/javascript" async src="//platform.twitter.com/widgets.js"></script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
@@ -231,5 +269,6 @@
             g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));
         </script>
+            
     </body>
 </html>
