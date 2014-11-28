@@ -1007,95 +1007,89 @@ header .caption {
     margin-top: 0;
   }
 }
-/* line 709, ../scss/screen.scss */
-footer {
+
+
+.contacts {
   float: left;
   width: 100%;
   padding: 60px 0;
   line-height: 1.875;
   background-color: #222;
 }
+
 @media only screen and (min-width: 700px) {
-  /* line 709, ../scss/screen.scss */
-  footer {
+  .contacts {
     padding: 115px  13.671875%;
   }
 }
-/* line 720, ../scss/screen.scss */
-footer .cta-button {
-  margin-top: 15px;
+
+    .contact {
+      float: left;
+      width: 33%;
+      padding-right: 30px;
+      color: #fff;
+      font-size: .875em;
+      list-style: none;
+    }
+      .city-header { 
+        margin-bottom: 15px;
+        font-size: 1.25em;
+      }
+      .contacts a { color: #fff;}
+
+
+.directions {
+  float: left;
+  width: 100%;
+  padding: 60px 0;
+  line-height: 1.875;
+  background-color: #666;
 }
-@media only screen and (max-width: 700px) {
-  /* line 722, ../scss/screen.scss */
-  footer .cta-button:after {
-    content: ".";
-  }
-}
+
 @media only screen and (min-width: 700px) {
-  /* line 723, ../scss/screen.scss */
-  footer .cta-button:after {
-    content: ", let's change things.";
+  .directions {
+    padding: 115px  13.671875%;
   }
 }
 
-/* line 728, ../scss/screen.scss */
-.mission-statement {
-  width: 75%;
-  margin: 0 auto;
+dt { 
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+  dt:first-child { margin-top:0;}
+  
+  dd {
+    margin: 0;
+  }
+
+.step-by-step {
+  float: left;
+  width: 50%;
+  padding-right: 20px;
   color: #ccc;
 }
 @media only screen and (min-width: 700px) {
-  /* line 728, ../scss/screen.scss */
-  .mission-statement {
+  .step-by-step {
     float: left;
-    width: 48.3870968%;
-    margin: 0;
+    width: 50%;
   }
 }
 
-/* line 741, ../scss/screen.scss */
-.still-address {
-  width: 75%;
-  padding: 0;
-  margin: 0 auto;
-  color: #fff;
-  font-size: .875em;
-  list-style: none;
+.google-map {
+    position: relative;
+    padding-bottom: 50%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
 }
-@media only screen and (min-width: 700px) {
-  /* line 741, ../scss/screen.scss */
-  .still-address {
-    float: right;
-    width: 48.3870968%;
-    margin: 0;
-    margin-top: 15px;
-    text-align: right;
-  }
+.google-map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
 }
-/* line 757, ../scss/screen.scss */
-.still-address .street-adress {
-  text-decoration: underline;
-}
-/* line 759, ../scss/screen.scss */
-.still-address p {
-  margin: 0;
-}
-/* line 760, ../scss/screen.scss */
-.still-address a {
-  color: inherit;
-}
-/* line 761, ../scss/screen.scss */
-.still-address a:hover {
-  color: #999;
-  -moz-transition-property: color;
-  -o-transition-property: color;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -moz-transition-duration: 1s;
-  -o-transition-duration: 1s;
-  -webkit-transition-duration: 1s;
-  transition-duration: 1s;
-}
+
+
 
 /* Parallax Stuff */
 /* line 771, ../scss/screen.scss */
